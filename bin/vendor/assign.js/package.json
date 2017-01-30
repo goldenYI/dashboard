@@ -1,0 +1,41 @@
+{
+  "name": "assign.js",
+  "version": "2.4.0",
+  "description": "Tiny libary to assign objects",
+  "keywords": [
+    "assign"
+  ],
+  "homepage": "https://github.com/imrefazekas/assign.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imrefazekas/assign.js.git"
+  },
+  "bugs": {
+    "url": "http://github.com/imrefazekas/assign.js/issues"
+  },
+  "author": {
+    "name": "Imre Fazekas",
+    "email": "mail@imrefazekas.me"
+  },
+  "license": "MIT",
+  "main": "./lib/assign.js",
+  "dependencies": {
+    "isa.js": "^1.7.6"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-mocha": "^3.0.1"
+  },
+  "browser": {
+    "fs": false,
+    "child_process": false
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "_from": "assign.js@2.4.0",
+  "_resolved": "http://registry.npm.taobao.org/assign.js/download/assign.js-2.4.0.tgz"
+}

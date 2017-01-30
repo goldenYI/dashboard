@@ -1,0 +1,275 @@
+/*
+    MIXINS
+*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/* actual flexbox stuff */
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.no-flexboxlegacy .container {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container:after,
+.no-flexboxlegacy .container:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container:after {
+  clear: both;
+}
+.no-flexboxlegacy .container > * {
+  float: left;
+}
+.container .left {
+  -ms-flex: 2;
+  flex: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.no-flexbox .container .left {
+  width: 20%;
+}
+.no-flexboxlegacy .container .left {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container .left:after,
+.no-flexboxlegacy .container .left:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container .left:after {
+  clear: both;
+}
+.no-flexboxlegacy .container .left > * {
+  float: left;
+}
+.container .middle {
+  -ms-flex: 7;
+  flex: 7;
+  -ms-flex-order: 2;
+  order: 2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.no-flexbox .container .middle {
+  width: 70%;
+}
+.no-flexboxlegacy .container .middle {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container .middle:after,
+.no-flexboxlegacy .container .middle:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container .middle:after {
+  clear: both;
+}
+.no-flexboxlegacy .container .middle > * {
+  float: left;
+}
+.container .middle .formFiled {
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.no-flexbox .container .middle .formFiled {
+  width: 50%;
+}
+.no-flexboxlegacy .container .middle .formFiled {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container .middle .formFiled:after,
+.no-flexboxlegacy .container .middle .formFiled:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container .middle .formFiled:after {
+  clear: both;
+}
+.no-flexboxlegacy .container .middle .formFiled > * {
+  float: left;
+}
+.container .middle .formFiled .inputFiled {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: Center;
+      align-items: Center;
+}
+.no-flexboxlegacy .container .middle .formFiled .inputFiled {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container .middle .formFiled .inputFiled:after,
+.no-flexboxlegacy .container .middle .formFiled .inputFiled:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container .middle .formFiled .inputFiled:after {
+  clear: both;
+}
+.no-flexboxlegacy .container .middle .formFiled .inputFiled > * {
+  float: left;
+}
+.container .middle .formFiled .inputFiled .searchField {
+  -ms-flex: 1;
+  flex: 1;
+}
+.no-flexbox .container .middle .formFiled .inputFiled .searchField {
+  width: 100%;
+}
+.container .middle .fillField {
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-order: 2;
+  order: 2;
+}
+.no-flexbox .container .middle .fillField {
+  width: 50%;
+}
+.container .right {
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.no-flexbox .container .right {
+  width: 10%;
+}
+.no-flexboxlegacy .container .right {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container .right:after,
+.no-flexboxlegacy .container .right:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container .right:after {
+  clear: both;
+}
+.no-flexboxlegacy .container .right > * {
+  float: left;
+}
+.container {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  box-shadow: 0 4px 5px #f2f2f2;
+}
+.container > div {
+  text-align: center;
+}
+.container .left {
+  height: 100%;
+  max-width: 100%;
+}
+.container .left .logoImg {
+  max-height: 80%;
+}
+.container .middle {
+  height: 100%;
+  background: white;
+}
+.container .middle .formFiled {
+  height: 100%;
+}
+.container .middle .formFiled .inputFiled {
+  background-color: #f7f8fa;
+  height: 60%;
+  width: 60%;
+}
+.container .middle .formFiled .inputFiled .searchField {
+  height: 100%;
+  border: 0px;
+  background-color: #f7f8fa;
+  margin-left: 5%;
+  outline: none;
+}
+.container .middle .formFiled .inputFiled .searchImg {
+  max-height: 60%;
+  margin-right: 3%;
+  margin-left: 3%;
+  cursor: pointer;
+}
+.container .right {
+  height: 100%;
+  background: white;
+}
+.container .right .userImg {
+  border-radius: 50%;
+  max-height: 70%;
+}

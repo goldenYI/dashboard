@@ -1,0 +1,42 @@
+{
+  "name": "proback.js",
+  "version": "1.7.1",
+  "description": "Tiny libary to aid Promise/Callback dual API design",
+  "keywords": [
+    "promise",
+    "callback",
+    "api",
+    "design"
+  ],
+  "homepage": "https://github.com/imrefazekas/proback.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imrefazekas/proback.js.git"
+  },
+  "bugs": {
+    "url": "http://github.com/imrefazekas/proback.js/issues"
+  },
+  "author": {
+    "name": "Imre Fazekas",
+    "email": "mail@imrefazekas.me"
+  },
+  "license": "MIT",
+  "main": "./lib/Proback.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-mocha": "^3.0.1"
+  },
+  "browser": {
+    "fs": false,
+    "child_process": false
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "_from": "proback.js@1.7.1",
+  "_resolved": "http://registry.npm.taobao.org/proback.js/download/proback.js-1.7.1.tgz"
+}

@@ -1,0 +1,49 @@
+/*
+    MIXINS
+*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  height: 100%;
+}
+.no-flexboxlegacy .container {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container:after,
+.no-flexboxlegacy .container:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container:after {
+  clear: both;
+}
+.no-flexboxlegacy .container > * {
+  float: left;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}

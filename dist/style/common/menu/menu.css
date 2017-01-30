@@ -1,0 +1,115 @@
+/*
+    MIXINS
+*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+  height: 100%;
+  width: 80px;
+  background-color: #2C2C31;
+  box-shadow: 5px 0px 5px #252529;
+  z-index: 5;
+}
+.container .fixbox {
+  width: 80px;
+  height: 80px;
+  z-index: 5;
+  background-color: #36B9B8;
+  position: absolute;
+  transition: margin-top 0.3s ease-out;
+}
+.container .ul {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.container .ul > li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 80px;
+  height: 80px;
+  z-index: 4;
+  transition: opacity 0.3s ease-out;
+}
+.no-flexboxlegacy .container .ul > li {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container .ul > li:after,
+.no-flexboxlegacy .container .ul > li:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container .ul > li:after {
+  clear: both;
+}
+.no-flexboxlegacy .container .ul > li > * {
+  float: left;
+}
+.container .ul > li:hover > img {
+  opacity: 0.5;
+}
+.container .ul > li > img {
+  width: 23px;
+  height: 23px;
+  z-index: 6;
+}
+.container .portrait {
+  width: 80px;
+  height: 80px;
+  bottom: 0px;
+  position: absolute;
+  background-color: #303037;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.no-flexboxlegacy .container .portrait {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container .portrait:after,
+.no-flexboxlegacy .container .portrait:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container .portrait:after {
+  clear: both;
+}
+.no-flexboxlegacy .container .portrait > * {
+  float: left;
+}
+.container .portrait > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
