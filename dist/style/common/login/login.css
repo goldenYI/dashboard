@@ -1,0 +1,137 @@
+/*
+    MIXINS
+*/
+@import '//cdn.webfont.youziku.com/webfonts/nomal/98278/47031/5897fd08f629d80c8cef00a5.css';
+@import '//cdn.webfont.youziku.com/webfonts/nomal/98278/38970/5897fe50f629d80c8cef00ad.css';
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.no-flexboxlegacy .container {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container:after,
+.no-flexboxlegacy .container:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container:after {
+  clear: both;
+}
+.no-flexboxlegacy .container > * {
+  float: left;
+}
+.container .title {
+  margin-top: 15px;
+  font-size: 1.4em;
+  color: #545A60;
+  font-family: 'COCOGOOSE8b6ddb22517fe6';
+}
+.container .userPortrait {
+  margin-top: 30px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #888888;
+  border-radius: 50%;
+}
+.container .userPortrait > img {
+  width: 70px;
+  height: 70px;
+}
+.container .fromField {
+  margin-top: 50px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  box-shadow: 0 0 3px #888888;
+}
+.no-flexboxlegacy .container .fromField {
+  *zoom: 1;
+}
+.no-flexboxlegacy .container .fromField:after,
+.no-flexboxlegacy .container .fromField:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.no-flexboxlegacy .container .fromField:after {
+  clear: both;
+}
+.no-flexboxlegacy .container .fromField > * {
+  float: left;
+}
+.container .fromField > input {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 200px;
+  height: 25px;
+  font-size: 1.1em;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'Paddington-Ital8b6e2b35617fe6';
+  letter-spacing: 2px;
+  border-width: 1px;
+  border-style: solid none none none;
+  border-color: #C0C3C7;
+  box-shadow: 0 3px 5px #c6c2c2;
+  z-index: 91001;
+}
+.container .fromField > input:first-child {
+  border: none;
+}
+.container .fromField > a {
+  background-color: #e6e4e4;
+  width: 200px;
+  height: 25px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-width: 1px;
+  border-style: solid none none none;
+  border-color: #C0C3C7;
+  z-index: 91000;
+  font-size: 1em;
+  color: #545A60;
+  font-family: 'COCOGOOSE8b6ddb22517fe6';
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.container .fromField > a:active {
+  background-color: #5bf5ab;
+}

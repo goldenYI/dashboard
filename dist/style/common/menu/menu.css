@@ -20,6 +20,12 @@
   box-shadow: 5px 0px 5px #252529;
   z-index: 5;
 }
+.container > * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .container .fixbox {
   width: 80px;
   height: 80px;
@@ -109,6 +115,10 @@
   float: left;
 }
 .container .portrait > img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
