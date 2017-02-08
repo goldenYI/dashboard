@@ -20,12 +20,14 @@ class Panel extends React.Component{
             <div
                 onClick={this.handleOnClick.bind(this)}
                 className={className.container}>
+
                 <PieGraph
                     speed={7}
                     value={this.state.value}/>
                 <PieGraph
                     speed={1}
                     value={this.state.value}/>
+                <div className={className.background}></div>
             </div>
         )
     }

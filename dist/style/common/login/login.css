@@ -1,8 +1,6 @@
 /*
     MIXINS
 */
-@import '//cdn.webfont.youziku.com/webfonts/nomal/98278/47031/5897fd08f629d80c8cef00a5.css';
-@import '//cdn.webfont.youziku.com/webfonts/nomal/98278/38970/5897fe50f629d80c8cef00ad.css';
 .clearfix {
   *zoom: 1;
 }
@@ -14,6 +12,20 @@
 }
 .clearfix:after {
   clear: both;
+}
+@font-face {
+  font-family: 'COCOGOOSE';
+  src: url('assets/font/COCOGOOSE/Cocogoose_trial.otf');
+}
+.COCOGOOSE {
+  font-family: 'COCOGOOSE';
+}
+@font-face {
+  font-family: 'PaddingtonItalic';
+  src: url('assets/font/PaddingtonItalic/paddingtonitalic.otf') format('truetype');
+}
+.PaddingtonItalic {
+  font-family: 'PaddingtonItalic';
 }
 .container {
   display: -ms-flexbox;
@@ -46,7 +58,7 @@
   margin-top: 15px;
   font-size: 1.4em;
   color: #545A60;
-  font-family: 'COCOGOOSE8b6ddb22517fe6';
+  font-family: 'COCOGOOSE';
 }
 .container .userPortrait {
   margin-top: 30px;
@@ -100,7 +112,7 @@
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0.8);
-  font-family: 'Paddington-Ital8b6e2b35617fe6';
+  font-family: 'PaddingtonItalic';
   letter-spacing: 2px;
   border-width: 1px;
   border-style: solid none none none;
@@ -124,7 +136,7 @@
   z-index: 91000;
   font-size: 1em;
   color: #545A60;
-  font-family: 'COCOGOOSE8b6ddb22517fe6';
+  font-family: 'COCOGOOSE';
   text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;

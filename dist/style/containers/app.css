@@ -42,6 +42,8 @@
 html,
 body {
   height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 * {
   overflow: hidden;

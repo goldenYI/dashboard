@@ -1,21 +1,16 @@
-.enter {
-  margin-top: -1400px;
-  transition: margin-top 1.2s ease-out;
+@keyframes modalEnter {
+  from {
+    -webkit-transform: translate3d(0, -1400px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }
-.enterActive {
-  margin-top: 0px;
-}
-.leave {
-  margin-top: 0px;
-  transition: margin-top 1.2s ease-out;
-}
-.leaveActive {
-  margin-top: -1400px;
-}
-.appear {
-  margin-top: -1400px;
-}
-.appearActive {
-  margin-top: 0px;
-  transition: margin-top 1.2s ease-out;
+@keyframes modalLeave {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, -1400px, 0);
+  }
 }

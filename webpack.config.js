@@ -37,11 +37,14 @@ var config = {
             },{
                test: /\.css$/,
                exclude: /node_modules/,
-               loader: "style-loader!css-loader?modules&root=./dist",
+               loader: 'style-loader!css-loader?modules&root=./dist',
            },{
 　　　　　　      test: /\.((woff2?|svg)(\?v=[0-9]\.[0-9]\.[0-9]))|(woff2?|svg|jpe?g|png|gif|ico)$/,
 　　　　　　      loader: 'url-loader?limit=8192&name=../assets/images/[hash:8].[name].[ext]'
-　　　　    }
+　　　　    },{
+                test: /\.(eot|otf|ttf)$/,
+                loader: 'url-loader?&name=../assets/font/.[name].[ext]'
+            },
         ]
     },
     eslint: {
